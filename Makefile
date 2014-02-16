@@ -6,4 +6,5 @@ all: fls_lcd.c lcd_unit_test.c
 
 clean:
 	make -C $(KPATH) M=$(PWD) clean
-	rm -rf lcd_unit_test
+	-rm -rf lcd_unit_test
+	-rm -f modules.order
